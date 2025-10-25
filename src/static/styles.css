@@ -157,12 +157,15 @@ footer {
 }
 
 .participants ul {
-  list-style: disc inside;
+  list-style: none; /* hide bullets */
   margin: 0;
   padding: 0;
 }
 
 .participants li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 6px 0;
   font-size: 14px;
   color: #444;
@@ -171,6 +174,22 @@ footer {
 
 .participants li:last-child {
   border-bottom: none;
+}
+
+.participant-remove {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.participant-remove:hover {
+  background-color: rgba(198,40,40,0.08);
 }
 
 .no-participants {
